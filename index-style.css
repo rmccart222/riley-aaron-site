@@ -81,7 +81,7 @@ a {
 
 /* Phone Screen */
 
-@media only screen 
+ @media only screen 
   and (min-device-width: 320px)
   and (max-device-width: 480px) {
     body {
@@ -159,4 +159,4 @@ a {
         max-width: 20px;
         height:auto;
     }
-  }
+  } 

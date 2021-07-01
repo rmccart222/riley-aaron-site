@@ -1,3 +1,39 @@
+html {
+    margin: 0 auto;
+}
+
 body {
+    margin: 0;
     background-color: #02060f;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background: #c1aca7;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 25px;
+}
+
+a {
+    color: #585b61;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #02060f;
 }
