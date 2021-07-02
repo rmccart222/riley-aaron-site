@@ -8,6 +8,7 @@ body {
     font-family: 'Archivo Black', sans-serif;
 }
 
+/* Nav Bar */
 .container {
     width: 80%;
     margin: 0 auto;
@@ -21,19 +22,38 @@ nav ul {
     margin: 0;
     padding: 0;
     list-style: none;
+    text-align: center;
 }
 
 nav li {
     display: inline-block;
-    margin-left: 70px;
+    margin-left: 10%;
+    margin-right: 10%;
     padding-top: 25px;
+    position: relative;
 }
 
 a {
     color: #585b61;
     text-decoration: none;
+    font-size: 23px;
 }
 
 nav a:hover {
     color: #02060f;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 0%;
+    background-color: #02060f;
+    position: absolute;
+    top: 0;
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
 }
