@@ -57,3 +57,12 @@ nav a::before {
 nav a:hover::before {
     width: 100%;
 }
+
+h2 {
+    color: #c1aca7;
+    text-align: center;
+}
+
+.embedContainer {
+    text-align: center;
+}
