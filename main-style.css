@@ -8,6 +8,32 @@ body {
     font-family: 'Archivo Black', sans-serif;
 }
 
+h2 {
+    color: #c1aca7;
+    text-align: center;
+}
+
+.embedContainer {
+    text-align: center;
+}
+
+.bioText {
+    color: #c1aca7;
+    text-align: center;
+    line-height: 2;
+    display: flexbox;
+    margin: 2em;
+    font-family: 'Roboto', sans-serif;
+    font-size: larger;
+}
+
+footer {
+    color: #c1aca7;
+    text-align: center;
+    display: flexbox;
+    margin: 2em;
+}
+
 /* Nav Bar */
 .container {
     width: 80%;
@@ -56,13 +82,4 @@ nav a::before {
 
 nav a:hover::before {
     width: 100%;
-}
-
-h2 {
-    color: #c1aca7;
-    text-align: center;
-}
-
-.embedContainer {
-    text-align: center;
 }
