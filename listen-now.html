@@ -7,15 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Listen Now | Official Website of Riley Aaron</title>
     <link rel="icon" type="image/png" href="Photos/favicon.png">
-    <link rel="stylesheet" type="text/css" href="main-style.css">
+    <link rel="stylesheet" type="text/css" href="listen-now-style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        referrerpolicy="no-referrer" />
 </head>
 
 <body>
+    <!-- Nav Bar -->
     <header>
         <div class="container">
             <nav>
@@ -27,7 +30,39 @@
             </nav>
         </div>
     </header>
-  
+    <!-- Music Player -->
+    <h1>LISTEN NOW</h1>
+
+    <div class="musicContainer">
+
+        <div class="musicInfo">
+            <h4 id="title">cold shakes</h4>
+        </div>
+
+        <div class="progressContainer">
+            <div class="progress"></div>
+        </div>
+
+        <audio src="music/cold shakes.mp3" id="audio"></audio>
+
+        <div class="imageContainer">
+            <img src="cover-art/cold shakes art.png" alt="cover-art" id="cover">
+        </div>
+
+        <div class="navigation">
+            <button id="prev" class="action-btn">
+                <i class="fas fa-backward"></i>
+            </button>
+            <button id="play" class="action-btn-big">
+                <i class="fas fa-play"></i>
+            </button>
+            <button id="next" class="action-btn">
+                <i class="fas fa-forward"></i>
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

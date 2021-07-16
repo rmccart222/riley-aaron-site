@@ -1,3 +1,17 @@
+html {
+    margin: 0 auto;
+}
+
+body {
+    margin: 0;
+    background-color: #02060f;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+h1, h4 {
+    color: #c1aca7;
+}
+
 /* Nav Bar */
 .container {
     width: 80%;
