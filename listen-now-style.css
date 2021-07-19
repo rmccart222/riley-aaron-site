@@ -1,15 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
 html {
     margin: 0 auto;
 }
 
 body {
+    height: 100vh;
     margin: 0;
     background-color: #02060f;
     font-family: 'Archivo Black', sans-serif;
 }
 
-h1, h4 {
+h1 {
     color: #c1aca7;
+}
+
+h4 {
+    color: #585b61;
 }
 
 /* Nav Bar */
@@ -60,4 +69,136 @@ nav a::before {
 
 nav a:hover::before {
     width: 100%;
+}
+
+/* Music Player */
+
+.musicPlayer {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.musicContainer {
+    background-color: #c1aca7;
+    border-radius: 15px;
+    box-shadow: 0 20px 20px 0 rgba(193, 172, 167, 0.6);
+    display: flex;
+    padding: 20px 30px;
+    position: relative;
+    margin: 100px 0;
+    z-index: 10;
+}
+
+.imageContainer {
+    width: 110px;
+    position: relative;
+}
+
+.imageContainer::after {
+    content: '';
+    background-color: #c1aca7;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    border-radius: 50%;
+    transform: translate(-60%, -80%);
+}
+
+.imageContainer img {
+    width: inherit;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    animation: rotate 3s linear infinite;
+    animation-play-state: paused;
+}
+
+.musicContainer.play .imageContainer img {
+    animation-play-state: running;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.action-btn {
+    background-color: #c1aca7;
+    border: 0;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+    margin: 0 20px;
+    color: #585b61;
+}
+
+.action-btn-big {
+    color: #585858;
+    font: 30px;
+}
+
+.action-btn:focus {
+    outline: 0;
+}
+
+.musicInfo {
+    background-color: rgba(193, 172, 167, 0.6);
+    border-radius: 15px 15px 0 0;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: calc(100% - 40px);
+    opacity: 0;
+    transform: translateY(0%);
+    padding: 10px 10px 10px 150px;
+    transition: transform 0.3s ease-in, opacity 0.3s ease-in;
+}
+
+.musicContainer.play .musicInfo {
+    opacity: 1;
+    transform: translateY(-100%);
+}
+
+.musicInfo h4 {
+    margin: 0;
+}
+
+.progressContainer {
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    height: 4px;
+    width: 100%;
+}
+
+.progress {
+    background-color: #585858;
+    border-radius: 5px;
+    height: 100%;
+    width: 0%;
+    transition: width 0.1s linear;
 }

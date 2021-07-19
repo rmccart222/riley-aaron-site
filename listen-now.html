@@ -31,34 +31,37 @@
         </div>
     </header>
     <!-- Music Player -->
-    <h1>LISTEN NOW</h1>
+    <div class="musicPlayer">
+        <h1>LISTEN NOW</h1>
 
-    <div class="musicContainer">
+        <div class="musicContainer">
 
-        <div class="musicInfo">
-            <h4 id="title">cold shakes</h4>
-        </div>
+            <div class="musicInfo">
+                <h4 id="title">cold shakes</h4>
+                <div class="progressContainer">
+                    <div class="progress"></div>
+                </div>
+            </div>
 
-        <div class="progressContainer">
-            <div class="progress"></div>
-        </div>
+            
 
-        <audio src="music/cold shakes.mp3" id="audio"></audio>
+            <audio src="music/cold shakes.mp3" id="audio"></audio>
 
-        <div class="imageContainer">
-            <img src="cover-art/cold shakes art.png" alt="cover-art" id="cover">
-        </div>
+            <div class="imageContainer">
+                <img src="cover-art/cold shakes art.png" alt="cover-art" id="cover">
+            </div>
 
-        <div class="navigation">
-            <button id="prev" class="action-btn">
-                <i class="fas fa-backward"></i>
-            </button>
-            <button id="play" class="action-btn-big">
-                <i class="fas fa-play"></i>
-            </button>
-            <button id="next" class="action-btn">
-                <i class="fas fa-forward"></i>
-            </button>
+            <div class="navigation">
+                <button id="prev" class="action-btn">
+                    <i class="fas fa-backward"></i>
+                </button>
+                <button id="play" class="action-btn action-btn-big">
+                    <i class="fas fa-play"></i>
+                </button>
+                <button id="next" class="action-btn">
+                    <i class="fas fa-forward"></i>
+                </button>
+            </div>
         </div>
     </div>
 
