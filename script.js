@@ -24,3 +24,21 @@ function loadSong(song) {
     cover.src = `cover-art/${song}.jpg`
 }
 
+function playSong() {
+
+}
+
+function pauseSong() {
+    
+}
+
+// Event Listeners
+playBtn.addEventListener('click', () => {
+    const isPlaying = musicContainer.classList.contains('play')
+
+    if(isPlaying) {
+        pauseSong()
+    } else {
+        playSong()
+    }
+}) 
