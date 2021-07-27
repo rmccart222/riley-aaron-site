@@ -1,7 +1,4 @@
-/* Desktop Screen */
-
-@media screen 
-  and (min-device-width: 768px) {
+/* Phone Screen */
 
 body {
     position: relative;
@@ -15,14 +12,16 @@ body {
     margin: 0;
 }
 
+
+
 h1 {
     font-family: 'Archivo Black', sans-serif;
-    font-size: 80px;
+    font-size: 36px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 5%;
-    margin: 0;
+    margin-bottom: 15%;
 }
 
 .titleLink {
@@ -34,7 +33,7 @@ h1 {
     display: flex;
     justify-content: center;
     padding: 5%;
-    margin: 10% 0 0 0;
+    margin: 50% 0 0 0;
     flex-wrap: wrap;
 }
 
@@ -46,8 +45,8 @@ h1 {
     color: #02060f;
     font-size: 25px;
     text-decoration: none;
-    margin: 1%;
-    padding: 20px 100px;
+    margin: 2%;
+    padding: 10px 40px 10px 40px;
 }
 
 li {
@@ -55,7 +54,7 @@ li {
     margin: 0;
     bottom: 0px;
     list-style-type: none;
-    padding: 3%;
+    padding: 5%;
 }
 
 a {
@@ -73,17 +72,18 @@ a {
 }
 
 .resize {
-    max-width: 30px;
-    height:auto;
+    max-width: 15px;
+    height: auto;
 }
 
+.appleLogo {
+    margin-right: 15px;
 }
 
-/* Phone Screen */
+/* Desktop & Tablet Screen */
 
- @media only screen 
-  and (min-device-width: 320px)
-  and (max-device-width: 480px) {
+@media only screen and (min-width: 768px) {
+
     body {
         position: relative;
         min-height: 100%;
@@ -95,32 +95,30 @@ a {
         background-position: 50% 50%;
         margin: 0;
     }
-    
-    
-    
+
     h1 {
         font-family: 'Archivo Black', sans-serif;
-        font-size: 45px;
+        font-size: 80px;
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 5%;
-        margin-bottom: 100%;
+        margin: 0;
     }
-    
+
     .titleLink {
         color: #02060f;
         text-decoration: none;
     }
-    
+
     .buttonWrapper {
         display: flex;
         justify-content: center;
-        padding: 5%;
-        margin: 60% 0 0 0;
+        padding: 1%;
+        margin: 10% 0 0 0;
         flex-wrap: wrap;
     }
-    
+
     .buttonListenNow,
     .buttonMain,
     .buttonLinkTree {
@@ -129,22 +127,22 @@ a {
         color: #02060f;
         font-size: 25px;
         text-decoration: none;
-        margin: 2%;
-        padding: 10px 40px 10px 40px;
+        margin: 1%;
+        padding: 20px 55px;
     }
-    
+
     li {
         display: inline;
         margin: 0;
         bottom: 0px;
         list-style-type: none;
-        padding: 5%;
+        padding: 3%;
     }
-    
+
     a {
         text-decoration: none;
     }
-    
+
     .socialWrapper {
         display: block;
         background-color: #02060f;
@@ -154,9 +152,10 @@ a {
         position: fixed;
         width: 100%;
     }
-    
+
     .resize {
-        max-width: 20px;
-        height:auto;
+        max-width: 30px;
+        height: auto;
     }
-  } 
+
+}
