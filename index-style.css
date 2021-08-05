@@ -80,7 +80,7 @@ a {
     margin-right: 15px;
 }
 
-/* Desktop & Tablet Screen */
+/* Tablet Screen */
 
 @media only screen and (min-width: 768px) {
 
@@ -125,7 +125,7 @@ a {
         font-family: 'Archivo Black', sans-serif;
         background-color: white;
         color: #02060f;
-        font-size: 25px;
+        font-size: 45px;
         text-decoration: none;
         margin: 1%;
         padding: 20px 55px;
@@ -156,6 +156,32 @@ a {
     .resize {
         max-width: 30px;
         height: auto;
+    }
+
+}
+
+/* Desktop */
+
+@media only screen and (min-width: 1024px) {
+
+    .buttonWrapper {
+        display: flex;
+        justify-content: center;
+        padding: 1%;
+        margin: 20% 0 0 0;
+        flex-wrap: wrap;
+    }
+
+    .buttonListenNow,
+    .buttonMain,
+    .buttonLinkTree {
+        font-family: 'Archivo Black', sans-serif;
+        background-color: white;
+        color: #02060f;
+        font-size: 30px;
+        text-decoration: none;
+        margin: 1%;
+        padding: 20px 55px;
     }
 
 }
